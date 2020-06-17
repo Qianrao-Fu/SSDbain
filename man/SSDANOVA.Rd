@@ -50,7 +50,7 @@ Res<-SSDANOVA(hyp1="mu1>mu2>mu3",hyp2="Hc",type="unequal",f1=0.25,f2=0.25,var=c(
 
 #Example 3: using means and within-group variances to specify the populations of interest.
 
-Res<-SSDANOVA(hyp1="mu1=mu2=mu3",hyp2="mu1>mu2>mu3",type="equal",f1=c(0,0,0),f2=c(550,560,580),var=c(2500,2500,2500),BFthresh=3,eta=0.8,T=10000,seed=10)
+Res<-SSDANOVA(hyp1="mu1=mu2=mu3",hyp2="mu3>mu2>mu1",type="equal",f1=c(0,0,0),f2=c(550,560,580),var=c(2500,2500,2500),BFthresh=3,eta=0.8,T=10000,seed=10)
 
 }
 
