@@ -1,0 +1,23 @@
+Package: SSDbain
+Type: Package
+Date:2020-05-16
+Title: Sample Size Determination using AAFBF Implemented in bain 
+Version: 0.1.0
+Authors@R: person("Qianrao","Fu",email="q.fu@uu.nl",role=c("aut","cre"))
+Maintainer: Qianrao Fu <q.fu@uu.nl>
+Description: Functions to compute the sample size within Bayesian framework.
+License: GPL (> =3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.3)
+Imports: 
+    WRS2,
+    EnvStats,
+    conflicted,
+    bain,
+    doParallel,
+    stringr,
+    pkgmaker,
+    foreach,
+    doRNG
+
