@@ -1,5 +1,6 @@
 # SSDbain
     
+The function SSDttest is used to compute the sample size required per group for the Bayesian t-test.
 The function SSDANOVA and SSDANOVA_robust in the R package SSDbain computes the sample size for the Bayesian ANOVA, Welch's ANOVA, and robust ANOVA.
 
 ### install devtools
