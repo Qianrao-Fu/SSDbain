@@ -5,7 +5,7 @@ The function SSDANOVA and SSDANOVA_robust in the R package SSDbain computes the 
 
 ### install devtools
 ```
-install.packages('devtools')
+install.packages("devtools")
 ```
 
 ### Load devtools package for install_github()
