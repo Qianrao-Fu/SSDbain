@@ -9,7 +9,7 @@ Description: Functions to compute the sample size within Bayesian framework.
 License: GPL (> =3)
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.5.3)
+Depends: R (>= 3.6.3)
 Imports: 
     WRS2,
     EnvStats,
