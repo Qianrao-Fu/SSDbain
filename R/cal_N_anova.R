@@ -369,9 +369,12 @@ SSDANOVA<-function(hyp1="mu1=mu2=mu3",hyp2="mu1>mu2>mu3",type="equal",f1,f2,var=
 
 SSDANOVA_robust<-function(hyp1,hyp2,f1,f2,var=NULL,skews,kurts,T,BFthresh,eta,seed=10){
   cat('It may take a long time for running. Please wait....')
-  if(kurts<skew^2-2){
+  sym<- unlist(strsplit(hyp1,split='[>=]'))
+  k<-length(sym)
+  for (i in 1:k){
+  if(kurts[i]<skews[i]^2-2){
     stop("kurtosis should be larger than the square of skewness minus two!")
-  }
+  } }
   if(BFthresh<1){
     stop("BFthresh should be larger than 1!")
   }
@@ -384,8 +387,7 @@ SSDANOVA_robust<-function(hyp1,hyp2,f1,f2,var=NULL,skews,kurts,T,BFthresh,eta,se
       }
     }
 
-   sym<- unlist(strsplit(hyp1,split='[>=]'))
-   k<-length(sym)
+
 
    if(length(var)==0){
      var<-numeric(k)
